@@ -8,7 +8,7 @@ import redis.clients.jedis.JedisPool;
 public class Test1 {
 
 	
-	@Test
+
 	public void gettest(){
 		Jedis jedis = new Jedis("10.10.12.134",6379);
 		String str=jedis.get("a2");
@@ -16,7 +16,7 @@ public class Test1 {
 		System.out.println(str);
 	}
 	
-	@Test
+
 	public void getpool(){
 		JedisPool jedisPool = new JedisPool("10.10.12.134",6379);
 		Jedis resource = jedisPool.getResource();
